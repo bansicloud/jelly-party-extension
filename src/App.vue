@@ -27,13 +27,10 @@ chrome.tabs.executeScript({
   file: "libs/js/loglevel.min.js"
 });
 chrome.tabs.executeScript({
-  file: "libs/js/randomName.js"
-});
-chrome.tabs.executeScript({
   file: "libs/js/lodash.js"
 });
 chrome.tabs.executeScript({
-  file: "contentScript.js"
+  file: "js/contentScript.js"
 });
 // Initially poll the state once and navigate accordingly
 getState(true);

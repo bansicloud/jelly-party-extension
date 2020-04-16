@@ -9,5 +9,13 @@ module.exports = {
       filename: "index.html",
       title: "Jelly-Party App"
     }
+  },
+  productionSourceMap: false,
+  filenameHashing: false,
+  configureWebpack: {
+    entry: {
+      contentScript: "./src/contentScript/contentScript.js"
+    },
+    devtool: "source-map"
   }
 };
